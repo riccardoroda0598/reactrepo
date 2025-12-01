@@ -9,21 +9,19 @@ const funzioneReducer = (state, action) => {
                 id: state.length+1,
                 description: action.payload.description,
                 type: action.payload.type,
-                import: action.payload.import
+                import: parseFloat(action.payload.import)
             }
-            return [...state, valori]
+            return [...state, valori].reverse();
         case 'ELIMINA':
-            console.log("PAYLOADDD")
-            console.log(action.payload)
-            console.log(state.filter((movimento) => movimento.id != action.payload))
             return state.filter((movimento) => movimento.id != action.payload)
+        case 'RESET':
+            return []
     }
 }
 const ContentSpese = ({children}) => {
     
     const initialState = []
     
-
     const [movimenti, dispatch] = useReducer(funzioneReducer, initialState);
 
     return (

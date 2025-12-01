@@ -3,14 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ContentSpese from './components/ContentSpese'
-import ReducerTest from './components/ReducerTest'
+import GestioneSpese from './components/GestioneSpese'
 
 function App() {
 
   return (
     <>
       <ContentSpese>
-        <ReducerTest />
+        <GestioneSpese />
       </ContentSpese>
     </>
   )
