@@ -84,7 +84,7 @@ const ReducerTest = () => {
                         className="w-full py-2 px-4 rounded-lg text-white font-semibold transition duration-300 ease-in-out 
                                 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
                     >
-                        Aggiungi Transazione
+                        Aggiungi
                     </button>
                 </form>
             </div>
